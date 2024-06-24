@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- Body starts here... -->
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block sidebar">
+          <div class="sidebar-sticky">
+            <!-- <div class="text-center mb-4">
+              <img
+                src="img/avatar.jpg"
+                alt="Avatar"
+                class="img-fluid rounded-circle"
+                height="50"
+                width="50"
+              />
+              <p>Welcome, Mike</p>
+              <i class="bi bi-envelope-fill"></i>
+              <i class="bi bi-person-fill"></i>
+              <i class="bi bi-gear-fill"></i>
+            </div> -->
+            <div class="d-flex align-items-center mb-4">
+              <img
+                src="img/avatar.jpg"
+                alt="Avatar"
+                class="img-fluid rounded-circle"
+                height="50"
+                width="50"
+              />
+              <div class="custom-margin">
+                <p class="mb-1">Welcome, Mike</p>
+                <div>
+                  <i class="bi bi-envelope-fill icon-spacing"></i>
+                  <i class="bi bi-person-fill icon-spacing"></i>
+                  <i class="bi bi-gear-fill"></i>
+                </div>
+              </div>
+            </div>
+
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Views</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Traffic</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Geo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">General</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Settings</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Main Dashboard starts here... -->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 dashboard">
+          <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom"
+          >
+            <h1 class="h2">My Dashboard</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card text-white bg-danger">
+                <div class="card-body">
+                  <i class="bi bi-chat-fill"></i>
+                  <h5 class="card-title">Messages</h5>
+                  <p class="card-text">52</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card text-white bg-primary">
+                <div class="card-body">
+                  <i class="bi bi-eye-fill"></i>
+                  <h5 class="card-title">Views</h5>
+                  <p class="card-text">99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card text-white bg-success">
+                <div class="card-body">
+                  <i class="bi bi-share-fill"></i>
+                  <h5 class="card-title">Shares</h5>
+                  <p class="card-text">23</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card text-white bg-warning">
+                <div class="card-body">
+                  <i class="bi bi-people-fill"></i>
+                  <h5 class="card-title">Users</h5>
+                  <p class="card-text">50</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-header">Regions</div>
+                <div class="card-body">
+                  <img src="img/map.png" alt="Map" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-header">Feeds</div>
+                <div class="card-body">
+                  <ul class="feeds-list">
+                    <li>
+                      New record, over 90 views.
+                      <span class="badge badge-primary">10 mins</span>
+                    </li>
+                    <li>
+                      Database error.
+                      <span class="badge badge-danger">15 mins</span>
+                    </li>
+                    <li>
+                      New record, over 40 users.
+                      <span class="badge badge-warning">17 mins</span>
+                    </li>
+                    <li>
+                      New comments.
+                      <span class="badge badge-info">25 mins</span>
+                    </li>
+                    <li>
+                      Check transactions.
+                      <span class="badge badge-secondary">28 mins</span>
+                    </li>
+                    <li>
+                      CPU overload.
+                      <span class="badge badge-danger">35 mins</span>
+                    </li>
+                    <li>
+                      New shares.
+                      <span class="badge badge-success">39 mins</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-md-4">
+            <div class="card">
+              <div class="card-header">General Stats</div>
+              <div class="card-body">
+                <h6>New Visitors <span class="float-right">+25%</span></h6>
+                <div class="progress mb-2">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 25%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>New Users <span class="float-right">50%</span></h6>
+                <div class="progress mb-2">
+                  <div
+                    class="progress-bar bg-warning"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h6>Bounce Rate <span class="float-right">75%</span></h6>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-danger"
+                    role="progressbar"
+                    style="width: 75%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-md-4">
+            <div class="card">
+              <div class="card-header">Countries</div>
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li>United States <span class="float-right">65%</span></li>
+                  <li>UK <span class="float-right">15.7%</span></li>
+                  <li>Russia <span class="float-right">5.6%</span></li>
+                  <li>Spain <span class="float-right">2.1%</span></li>
+                  <li>India <span class="float-right">1.9%</span></li>
+                  <li>France <span class="float-right">1.5%</span></li>
+                </ul>
+                <a href="#" class="btn btn-link">More Countries</a>
+              </div>
+            </div>
+          </div>
+          <div class="row-md-4">
+            <div class="card">
+              <div class="card-header">Recent Users</div>
+              <div class="card-body">
+                <div class="recent-users">
+                  <div class="media mb-2">
+                    <img src="IMG/M1.png" alt="User" width="40" />
+                    <div class="media-body">
+                      <h6 class="mt-0">Mike</h6>
+                    </div>
+                  </div>
+                  <div class="media mb-2">
+                    <img src="img/FM1.svg" alt="User" width="40" />
+                    <div class="media-body">
+                      <h6 class="mt-0">Jill</h6>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <img src="img/FM2.png" alt="User" width="40" />
+                    <div class="media-body">
+                      <h6 class="mt-0">Jane</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Comments Row -->
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header">Recent Comments</div>
+                <div class="card-body">
+                  <div class="recent-comments">
+                    <div class="comment">
+                      <div class="media">
+                        <img
+                          src="img/M2.png"
+                          alt="User"
+                          width="40"
+                          class="mr-3"
+                        />
+                        <div class="media-body">
+                          <h6 class="mt-0">
+                            John <small>Sep 29, 2014, 9:12 PM</small>
+                          </h6>
+                          <p>
+                            Keep up the GREAT work! I am cheering for you!!
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment">
+                      <div class="media">
+                        <img
+                          src="img/M3.png"
+                          alt="User"
+                          width="40"
+                          class="mr-3"
+                        />
+                        <div class="media-body">
+                          <h6 class="mt-0">
+                            Bo <small>Sep 28, 2014, 10:15 PM</small>
+                          </h6>
+                          <p>
+                            Another comment text here. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Add more comments as needed -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>
